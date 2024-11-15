@@ -8,7 +8,7 @@ Ambos cartuchos están disponibles para su compra aquí:<BR>
 https://ifc.booth.pm/items/3092101<BR> 
 https://ifc.booth.pm/items/3092120<BR>
 
-## ■ メモリマップ
+## ■ Mapa de memoria
 
 Especificaciones similares a las de KONAMI4. Tenga en cuenta que el espacio de memoria 0x4000-0x5FFF está fijo en BANK0<BR>
 <BR>
