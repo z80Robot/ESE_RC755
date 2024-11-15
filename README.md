@@ -1,12 +1,27 @@
-# MSX用カードリッジ KONAMI4互換<BR>Flashカードリッジ 似非RC755
-KONAMI8Kバンク切り替え(KONAMI4)互換のカードリッジです。<BR>
-KONAMI VRC007431互換のCPLDを搭載しており、「1Mbit+FRAM版」/「4Mbit版」 の2つのVersionがあります。<BR>
-※SCCは付いていません。<BR>
+
+
+Está equipada con un CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:
+
+Versión "1Mbit+FRAM"
+Versión "4Mbit"
+※No incluye SCC.
+La versión "1Mbit+FRAM" tiene la misma configuración de bancos que el "Nuevo cartucho 10 veces" (GAME MASTER2), por lo que puede ser utilizada como reemplazo para recuperar cartuchos cuya batería SRAM se haya agotado.
+
+Ambos cartuchos están disponibles para su distribución en el Booth:
+
+https://ifc.booth.pm/items/3092101
+https://ifc.booth.pm/items/3092120
+
+
+# Cartucho para MSX compatible con KONAMI4
+Este cartucho es compatible con el mapper KONAMI8K (KONAMI4).<BR>
+Usa CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:<BR>
 <BR>
-「1Mbit+FRAM版は、「新10倍カードリッジ」(GAME MASTER2)と同一バンク構成になっており、<BR>
- SRAMバッテリ切れの同カセットの救済用として使用する事ができます。<BR>
+- Versión 1Mbit+FRAM (Misma configuración de bancos que GAME MASTER2<BR>
+- Versión 4Mbit<BR>
+** No incluye SCC<BR>
 <BR>
-各カセットは、Boothにて頒布しています。<BR>
+Ambos cartuchos están disponibles para su compra aquí:<BR>
 https://ifc.booth.pm/items/3092101 
 https://ifc.booth.pm/items/3092120
 
