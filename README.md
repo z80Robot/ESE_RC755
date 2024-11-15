@@ -10,8 +10,8 @@ https://ifc.booth.pm/items/3092120<BR>
 
 ## ■ メモリマップ
 
-KONAMI4と同様の仕様です。0x4000-5FFFの空間はBANK0固定なのに注意してください。
-
+Especificaciones similares a las de KONAMI4. Tenga en cuenta que el espacio de memoria 0x4000-0x5FFF está fijo en BANK0<BR>
+<BR>
 | Page (8kB)                        | Switching address            | Initial segment | 
 | --------------------------------- | ---------------------------- | --------------- | 
 | 4000h ~ 5FFFh  | 5000h (mirrors: 5001h ~ 57FFh) | 0  (FIXED)      | 
