@@ -1,4 +1,4 @@
-**TRAUDCCION AUTOMATIZADA, SIN REVISAR**<BR>
+**TRADUCCIÓN AUTOMATIZADA, SIN REVISAR**<BR>
 
 # Cartucho para MSX compatible con KONAMI4
 Este cartucho es compatible con el mapper KONAMI8K (KONAMI4).<BR>
