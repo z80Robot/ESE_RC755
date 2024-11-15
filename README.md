@@ -1,7 +1,6 @@
 # Cartucho para MSX compatible con KONAMI4
 Este cartucho es compatible con el mapper KONAMI8K (KONAMI4).<BR>
 Usa CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:<BR>
-<BR>
 - Versión 1Mbit+FRAM (Misma configuración de bancos que GAME MASTER2<BR>
 - Versión 4Mbit<BR>
 ** Ninguna versión incluye SCC<BR>
