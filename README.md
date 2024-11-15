@@ -85,7 +85,7 @@ Además, tenga en cuenta que el comportamiento del BUSY también es diferente al
  | Page 1 | 4000h - 4fffh = Flash Address 2000 - 2fffh (BA1) MSX:4AAAh  |  Flash:2AAAh |
  | Page 1 | 5000h - 5fffh = Flash Address 5000 - 5fffh (BA2) MSX:5555h  |  Flash:5555h |
 
-CMD例：
+CMD：
 1. Set Flash mode         : 0xA000 = 0x80
 1. Page Select            : 0x6000 = Segment
 1. Flash Byte-Program 1st : 0x5555 = 0xAA
@@ -94,44 +94,29 @@ CMD例：
 1. Write Data             : 0x6000～0x7fff = data
 1. Page Reselect          : 0x6000 = Segment
 
-参考：
+Referencia:
 https://www.microchip.com/wwwproducts/en/SST39SF010A
 <BR>
 
-## ■ Flash書き込みプログラム
-書き込みプログラムとして、eseRC755を同梱しています。 
-いずれかのスロットに当該カードリッジを挿入し、以下コマンドを実行してください。<BR>
-`>eseRC755.com [書き込みをしたいROM File]`<BR>
+## Programación de la memoria Flash
+Como programa de escritura, se incluye el eseRC755. Inserte el cartucho correspondiente en uno de los slots y ejecute el siguiente comando。<BR>
+`>eseRC755.com [Archivo ROM]`<BR>
 <BR>
-ソースコードは、z88dkでコンパイル可能です。コンパイルオプションは下記になります。<BR>
+El código fuente se puede compilar con z88dk. Las opciones de compilación son las siguientes:<BR>
 `zcc +msx -create-app -subtype=msxdos -lmsxbios  main.c -o eseRC755.com`<BR>
 
   
-## ■ 頒布基板について
-「1Mbit+FRAM版」/「4Mbit版」 の2つのVersionがあります。<BR>
-IC1にICが付いているのが「1Mbit+FRAM版」、ICが無いものが「4Mbit版」になります<BR>
+## ■ Versiones de PCB
+Existen dos versiones:'Versión 1Mbit+FRAM / Versión 4Mbit<BR>
+El que tiene un IC en IC1 es la 'Versión 1Mbit+FRAM', y el que no tiene IC es la 'Versión 4Mbit<BR>
 <BR>
-出荷時は検査用の動作プログラムが書き込んであります。<BR>
-動作完了後、[e]キーを押すことで当該プログラムを消去する事が可能です。<BR>
-
-J1をカットしてSW1を追加することで、ROMの切り離しが可能です。後差しが気になる場合に追加してください。<BR>
-推奨パーツ：SW1 IS-1245T-G [Switronic] (秋月電子扱い）<BR>
+Al cortar J1 y añadir SW1, es posible desconectar el ROM. Agregue esto si le preocupa la conexión posterior.<BR>
+Parte recomendada: SW1 IS-1245T-G [Switronic] (disponible en Akizuki Denshi).<BR>
 <BR>
-回路図およびガーバファイルが必要な場合は同梱ファイルを参考にしてください。<BR>
-※ソフト頒布などで使用する場合はご相談頂ければ、別途製造対応可能です。<BR>
+Si necesita el diagrama de circuitos y los archivos Gerber, consulte los archivos incluidos.<BR>
 <BR>
-## ■ CPLDについて
-CPLD Xillix XC9536XLに書き込んであるデータは「1Mbit+FRAM版」/「4Mbit版」で異なります。<BR>
-RTL上のUSE_MRAMを変更することでそれぞれのVersionを作成可能です。<BR>
+## ■ Acerca del CPLD
+Los datos grabados en el CPLD Xilinx XC9536XL son diferentes entre la Versión 1Mbit+FRAM y la Versión 4Mbit<BR>
+Es posible crear cada versión modificando el USE_MRAM en el RTL.<BR>
 <BR>
-
-## ■ カードリッジシェルについて
-推奨はRGRさんのTransparent Cartridge Shell for MSX Konami-styleになります。<BR>
-https://retrogamerestore.com/store/msx_cart_shell/
-<BR>
-シェル同梱版も、上記製品を使用しています。<BR>
-輸入と製造都合で若干の小傷がある場合があります。あらかじめご了承ください。<BR>
-<BR>
-頒布基板はASCII仕様のいくつかのシェルタイプに対応していますが、<BR>
-すべてのタイプには対応していません。ご了承ください。<BR>
 
