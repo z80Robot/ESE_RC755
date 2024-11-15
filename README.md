@@ -28,7 +28,7 @@ Especificaciones similares a las de KONAMI4. Tenga en cuenta que el espacio de m
 Bit 0 ~ 5 = Segment number <BR>
 Bit 6 ~ 7 = Unused <BR>
 <BR>
-F-RAMが有効の場合は下記の通りです。<BR>
+En caso de que F-RAM esté habilitado, es como se indica a continuación:<BR>
 | BIT7 | BIT6 | BIT5 | BIT4 | BIT3 | BIT2 | BIT1 | BIT0 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | Unused | Unused | SRAM Segment | SRAM/ROM | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
@@ -38,7 +38,7 @@ Bit 4 = 1 to select the SRAM (writable on page B000h ~ BFFFh only) <BR>
 Bit 5 = SRAM segment select (two segments of 4kB available) <BR>
 Bit 6 ~ 7 = Unused <BR>
 <BR>
-参考：
+Referencia：
 https://www.msx.org/wiki/MegaROM_Mappers#Game_Master_2_.28Konami.29
 
 
@@ -59,7 +59,7 @@ Bit 0 ~ 5 = Segment number <BR>
 Bit 6 = Unused <BR>
 Bit 7 = Flash control<BR>
 <BR>
-F-RAMが有効の場合は下記の通りです。<BR>
+En caso de que F-RAM esté habilitado, es de la siguiente manera:<BR>
 | BIT7 | BIT6 | BIT5 | BIT4 | BIT3 | BIT2 | BIT1 | BIT0 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | Flash | Unused | SRAM Segment | SRAM/ROM | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
