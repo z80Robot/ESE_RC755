@@ -43,7 +43,7 @@ https://www.msx.org/wiki/MegaROM_Mappers#Game_Master_2_.28Konami.29
 
 
 <BR>
-下記Pageについては、Flash書き込みの為にBIT7 Flash controlが拡張されています。<BR>
+Para las páginas mencionadas a continuación, el control Flash con el BIT7 ha sido ampliado para permitir la escritura en Flash.<BR>
   
 | Page (8kB)                        | Switching address            | Initial segment | 
 | --------------------------------- | ---------------------------- | --------------- | 
@@ -70,14 +70,15 @@ Bit 5 = SRAM segment select (two segments of 4kB available) <BR>
 Bit 6 = Unused <BR>
 Bit 7 = Flash control<BR>
 <BR>
-## ■ Flashの制御方法
-書き込みモードにするために、0xA000-BFFFに0x80を書き込んでください。<BR>
-Flashのコントロールアドレス2AAAhは4AAAh・コントロールアドレス5555hは5555hにマッピングされます。<BR>
-書き込みには6000h ~ 7FFFhの領域を使ってください。他の領域では書き込みができない可能性があります。<BR>
+## ■ Control de Flash
+Para activar el modo de escritura, escriba 0x80 en la dirección 0xA000-0xBFFF.<BR>
+La dirección de control de Flash 2AAAh está mapeada en 4AAAh, y la dirección de control 5555h está mapeada en 5555h.<BR>
+Para realizar la escritura, utilice el rango de direcciones 6000h ~ 7FFFh.<BR>
+Es posible que no se pueda escribir en otras áreas.<BR>
 <BR>
-本製品は従来使用していたAMD系のFlashではなく、SST系を使用しています。<BR>
-CMD体系は、AMD系とほぼ同じなのですが、CMDアドレスが違います。<BR>
-また、BUSYの出方などもAMD系と異なるため注意してください。<BR>
+Este producto utiliza Flash de la serie SST<BR>
+El sistema CMD es prácticamente el mismo que el de los Flash AMD, pero las direcciones CMD son diferentes.<BR>
+Además, tenga en cuenta que el comportamiento del BUSY también es diferente al de los Flash AMD, por lo que debe prestar atención a este detalle.<BR>
   
  | Page 4 | A000h - AFFFh (A000h used) set bit7 = 1'b1  |  Set Flash Write mode | 
  | ------ | ------------------------------------------- | ------------------ | 
