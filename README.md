@@ -4,7 +4,7 @@ Usa CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:<BR
 <BR>
 - Versión 1Mbit+FRAM (Misma configuración de bancos que GAME MASTER2<BR>
 - Versión 4Mbit<BR>
-- ** Ninguna versión incluye SCC<BR>
+** Ninguna versión incluye SCC<BR>
 <BR>
 Ambos cartuchos están disponibles para su compra aquí:<BR>
 https://ifc.booth.pm/items/3092101<BR> 
