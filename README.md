@@ -1,18 +1,3 @@
-
-
-Está equipada con un CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:
-
-Versión "1Mbit+FRAM"
-Versión "4Mbit"
-※No incluye SCC.
-La versión "1Mbit+FRAM" tiene la misma configuración de bancos que el "Nuevo cartucho 10 veces" (GAME MASTER2), por lo que puede ser utilizada como reemplazo para recuperar cartuchos cuya batería SRAM se haya agotado.
-
-Ambos cartuchos están disponibles para su distribución en el Booth:
-
-https://ifc.booth.pm/items/3092101
-https://ifc.booth.pm/items/3092120
-
-
 # Cartucho para MSX compatible con KONAMI4
 Este cartucho es compatible con el mapper KONAMI8K (KONAMI4).<BR>
 Usa CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:<BR>
