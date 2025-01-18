@@ -1,25 +1,22 @@
-**TRADUCCIÓN AUTOMATIZADA, SIN REVISAR**<BR>
+**EN PROGRESO**<BR>
 
 # Cartucho para MSX compatible con KONAMI4
 Este cartucho es compatible con el mapper KONAMI8K (KONAMI4).<BR>
-Usa CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:<BR>
+Usa un CPLD compatible con KONAMI VRC007431 y está disponible en dos versiones:<BR>
 - Versión 1Mbit+FRAM (Misma configuración de bancos que GAME MASTER2<BR>
 - Versión 4Mbit<BR>
 ** Ninguna versión incluye SCC<BR><BR>
-Ambos cartuchos están disponibles para su compra aquí:<BR>
-https://ifc.booth.pm/items/3092101<BR> 
-https://ifc.booth.pm/items/3092120<BR>
 
 ## ■ Mapa de memoria
 
-Especificaciones similares a las de KONAMI4. Tenga en cuenta que el espacio de memoria 0x4000-0x5FFF está fijo en BANK0<BR>
+La SubPagina 0 ocupa 0x4000-0x5FFF y está fija, no debe ser cambiada mientras se ejecuta el programa<BR>
 
-| Page (8kB)                        | Switching address            | Initial segment | 
+| SubPagina (8kB)                        | Switching address            | Pag - Segment | 
 | --------------------------------- | ---------------------------- | --------------- | 
-| 4000h ~ 5FFFh  | 5000h (mirrors: 5001h ~ 57FFh) | 0  (FIXED)      | 
-| 6000h ~ 7FFFh  | 7000h (mirrors: 7001h ~ 77FFh) | 1               | 
-| 8000h ~ 9FFFh  | 9000h (mirrors: 9001h ~ 97FFh) | 2               | 
-| A000h ~ BFFFh  | B000h (mirrors: B001h ~ B7FFh) | 3               |
+| 4000h ~ 5FFFh  | 5000h (mirrors: 5001h ~ 57FFh) | 1 - R0      | 
+| 6000h ~ 7FFFh  | 7000h (mirrors: 7001h ~ 77FFh) | 1 - R1      | 
+| 8000h ~ 9FFFh  | 9000h (mirrors: 9001h ~ 97FFh) | 2 - R2      | 
+| A000h ~ BFFFh  | B000h (mirrors: B001h ~ B7FFh) | 3 - R3      |
 
 <BR>
 
@@ -27,18 +24,18 @@ Especificaciones similares a las de KONAMI4. Tenga en cuenta que el espacio de m
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | Unused | Unused | Segment[5] | Segment[4] | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
 
-Bit 0 ~ 5 = Segment number <BR>
-Bit 6 ~ 7 = Unused <BR>
+Bit 0 ~ 5 = Número de Segmento <BR>
+Bit 6 ~ 7 = Sin uso <BR>
 <BR>
-En caso de que F-RAM esté habilitado, es como se indica a continuación:<BR>
+Para habilitar S-Ram, es como se indica a continuación:<BR>
 | BIT7 | BIT6 | BIT5 | BIT4 | BIT3 | BIT2 | BIT1 | BIT0 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Unused | Unused | SRAM Segment | SRAM/ROM | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
+| Sin Uso | Sin Uso | Segment S-Ram | SRAM/ROM | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
 
-Bit 0 ~ 3 = Segment number <BR>
-Bit 4 = 1 to select the SRAM (writable on page B000h ~ BFFFh only) <BR>
-Bit 5 = SRAM segment select (two segments of 4kB available) <BR>
-Bit 6 ~ 7 = Unused <BR>
+Bit 0 ~ 3 = Número de Segménto <BR>
+Bit 4 = 1 para seleccionar SRAM (solo puede escribirse en Banco 2-2 - B000h ~ BFFFh) <BR>
+Bit 5 = Seleccion de segmento de SRAM (hay dos segmentos de 4kB disponibles) <BR>
+Bit 6 ~ 7 = Sin Uso <BR>
 <BR>
 Referencia：
 https://www.msx.org/wiki/MegaROM_Mappers#Game_Master_2_.28Konami.29
@@ -47,7 +44,7 @@ https://www.msx.org/wiki/MegaROM_Mappers#Game_Master_2_.28Konami.29
 <BR>
 Para las páginas mencionadas a continuación, el control Flash con el BIT7 ha sido ampliado para permitir la escritura en Flash.<BR>
   
-| Page (8kB)                        | Switching address            | Initial segment | 
+| Banco 2-2 (8kB)                        | Switching address            | Initial segment | 
 | --------------------------------- | ---------------------------- | --------------- | 
 | A000h ~ BFFFh (mirror: 2000h ~ 3FFFh) | B000h (mirrors: B001h ~ B7FFh) | 3               |
 
@@ -55,7 +52,7 @@ Para las páginas mencionadas a continuación, el control Flash con el BIT7 ha s
   
 | BIT7 | BIT6 | BIT5 | BIT4 | BIT3 | BIT2 | BIT1 | BIT0 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Flash | Unused | Segment[5] | Segment[4] | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
+| Flash | Sin Uso | Segment[5] | Segment[4] | Segment[3] | Segment[2] | Segment[1] | Segment[0] |
 
 Bit 0 ~ 5 = Segment number <BR>
 Bit 6 = Unused <BR>
